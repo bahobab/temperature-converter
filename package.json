@@ -1,0 +1,42 @@
+{
+  "name": "calorie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --watch",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@testing-library/dom": "^7.23.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "babel-loader": "^8.1.0",
+    "html-loader-jest": "^0.2.1",
+    "hyperscript": "^2.0.2",
+    "hyperscript-helpers": "^3.0.3",
+    "jest": "^26.4.2",
+    "jsdom": "^16.4.0",
+    "ramda": "^0.27.1",
+    "virtual-dom": "^2.1.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "html"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.html$": "html-loader-jest"
+    }
+  }
+}
