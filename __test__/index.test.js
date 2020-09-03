@@ -22,9 +22,9 @@ const html = fs.readFileSync(
 
 // const loader = require("html-loader-jest");
 // const indexHtml = loader.process(path.resolve(__dirname, "../src/index.html"));
-import indexHtml from "../src/index.html";
 
-console.log("html", indexHtml);
+// import indexHtml from "../src/index.html";
+// console.log("html", indexHtml);
 
 let dom;
 let container;
@@ -37,11 +37,9 @@ beforeEach(() => {
 
   container = dom.window.document.body;
 
-  console.log(">>container", dom.window.document.body);
+  //   console.log(">>container", dom.window.document.body);
 
   screen.debug();
-
-  //   document.body.innerHTML = html;
 });
 
 describe("Conversion functions", () => {
